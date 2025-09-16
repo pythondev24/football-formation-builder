@@ -1,0 +1,58 @@
+<div class="wrap">
+    <header>
+        <div class="brand">
+            <div class="logo"></div>
+            <h1>Real Madrid Formation Builder</h1>
+        </div>
+    </header>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="formation-select">Formation:</label>
+            <select id="formation-select">
+                <option value="4-3-3">4-3-3</option>
+                <option value="4-4-2">4-4-2</option>
+                <option value="3-5-2">3-5-2</option>
+                <option value="4-2-3-1">4-2-3-1</option>
+                <option value="5-3-2">5-3-2</option>
+                <option value="4-1-4-1">4-1-4-1</option>
+                <option value="3-4-3">3-4-3</option>
+                <option value="4-5-1">4-5-1</option>
+            </select>
+        </div>
+
+        <button id="reset-btn"><i class="fas fa-sync-alt"></i> Reset Formation</button>
+
+
+        <div class="toggle-names active" id="toggle-names">
+            <span>Player Names</span>
+            <div class="toggle-switch"></div>
+        </div>
+
+        <div class="control-group">
+            <label for="formation-select">Title:</label>
+            <input id="formation-input" class="formation-input" type="text" placeholder="Enter formation title" />
+
+            <button id="download-btn"><i class="fas fa-download"></i> Download</button>
+        </div>
+
+    </div>
+    <div class="formation-title" id="formation-title">4-3-3 Formation</div>
+
+    <section class="card">
+        <div id="pitch" class="pitch" aria-label="Pitch">
+            <div class="card-title" id="card-title"></div>
+            <div class="coach" aria-hidden="true">
+                <div class="inner"><img crossorigin="anonymous"
+                        src="/proxy?url=https://casamadridista.com/wp-content/uploads/2025/08/Xabi-Alonso-1.png"
+                        alt="Coach" draggable="false"></div>
+                <div class="tag">COACH</div>
+            </div>
+        </div>
+        <div class="bench" id="bench">
+            <div class="bench-title">Substitutes</div>
+            <div class="bench-grid" id="benchGrid"></div>
+            <div class="bench-drop-hint">Drop here to send a player to bench</div>
+        </div>
+    </section>
+</div>
